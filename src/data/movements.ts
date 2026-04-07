@@ -2,6 +2,33 @@ import type { Movement } from "../types"
 
 export const movements: Movement[] = [
   {
+    id:"prehistoire",era:"Préhistoire",name:"Art préhistorique",dates:"~40 000 — ~3500 av. J.-C.",
+    intro:"Les premières images de l'humanité. Des mains négatives des grottes aux mégalithes de Stonehenge, l'art préhistorique pose une question vertigineuse : pourquoi l'Homo sapiens a-t-il ressenti le besoin de créer des images ?",
+    detail:`<p>L'art préhistorique est le plus ancien témoignage de la pensée symbolique humaine. Les premières manifestations connues datent d'environ <strong>40 000 ans</strong> : des peintures et gravures dans des grottes profondes, des statuettes en ivoire et en pierre, des instruments de musique en os. L'art ne commence pas « primitif » pour s'améliorer — les peintures de <strong>Lascaux</strong> (~17 000 av. J.-C.) et de <strong>Chauvet</strong> (~36 000 av. J.-C.) témoignent d'une maîtrise technique et d'une sensibilité esthétique qui n'ont rien de « primitif ».</p>
+<p>L'<strong>art pariétal</strong> (peintures et gravures sur les parois des grottes) est le plus spectaculaire. La grotte <strong>Chauvet</strong> (Ardèche, découverte en 1994) contient les plus anciennes peintures figuratives connues en Europe : des lions, rhinocéros, ours et chevaux dessinés au charbon et à l'ocre avec un sens du mouvement et du volume stupéfiant — certains animaux ont 8 pattes pour suggérer la course, effet proto-cinématographique. <strong>Lascaux</strong> (Dordogne, découverte en 1940) — la « Chapelle Sixtine de la Préhistoire » — montre des taureaux, chevaux et cerfs d'une beauté qui bouleversa Picasso : « Nous n'avons rien inventé. »</p>
+<p>L'<strong>art mobilier</strong> (objets transportables) comprend les <em>Vénus</em> paléolithiques — petites statuettes féminines aux formes exagérées (seins, ventre, hanches), dont la <em>Vénus de Willendorf</em> (~25 000 av. J.-C.) est la plus célèbre. Leur signification reste débattue : symboles de fertilité ? autoportraits ? objets rituels ? Le <strong>Néolithique</strong> (~10 000–3500 av. J.-C.) voit l'apparition de l'agriculture, de la sédentarisation et des premières constructions monumentales : les <strong>mégalithes</strong> (Stonehenge, ~2500 av. J.-C. ; Carnac, ~4500 av. J.-C.) et les premiers villages aux murs peints (Çatal Höyük, Turquie, ~7000 av. J.-C.).</p>`,
+    notions:["Art pariétal","Art mobilier","Vénus paléolithiques","Ocre / charbon de bois","Main négative","Mégalithes","Néolithique","Pensée symbolique","Proto-cinéma (Chauvet)","Chamanisme (hypothèse)"],
+    artists:[
+      {name:"Peintres de Chauvet",dates:"~36 000 av. J.-C.",movement:"Paléolithique supérieur",wiki:"Chauvet_Cave",
+       bio:`<p>Les artistes anonymes de la grotte Chauvet-Pont-d'Arc (Ardèche) sont les auteurs des plus anciennes peintures figuratives connues en Europe. Découverte en 1994 par Jean-Marie Chauvet, Éliette Brunel et Christian Hillaire, la grotte contient plus de 400 représentations animales d'une qualité technique stupéfiante pour leur âge : <strong>36 000 ans</strong>.</p>
+<p>Les artistes utilisent le charbon de bois et l'ocre, exploitent les reliefs naturels de la roche pour donner du volume aux figures, et montrent un sens du mouvement remarquable — certains animaux ont des pattes démultipliées, comme des images stroboscopiques. Les espèces représentées sont inhabituelles : lions des cavernes, rhinocéros laineux, mammouths, ours — des prédateurs dangereux, rarement chassés. Werner Herzog en tire le documentaire <em>Cave of Forgotten Dreams</em> (2010). La grotte originale est fermée au public ; une réplique (Caverne du Pont-d'Arc) a été ouverte en 2015.</p>`,
+       highlight:"Il y a 36 000 ans, un artiste dessine un lion au charbon dans une grotte — et le trait est parfait.",
+       works:["Panneau des Lions (grotte Chauvet, ~36 000 av. J.-C.)","Panneau des Chevaux","Rhinocéros à 4 pattes (proto-animation)"]},
+      {name:"Peintres de Lascaux",dates:"~17 000 av. J.-C.",movement:"Paléolithique supérieur (Magdalénien)",wiki:"Lascaux",
+       bio:`<p>Les artistes anonymes de la grotte de Lascaux (Dordogne), découverte en 1940 par quatre adolescents, créent l'ensemble le plus célèbre de l'art pariétal. Surnommée la « <strong>Chapelle Sixtine de la Préhistoire</strong> » par Henri Breuil, la grotte contient environ 600 peintures et 1 500 gravures sur ses parois : des taureaux gigantesques (jusqu'à 5 mètres de long), des chevaux, des cerfs, des bouquetins.</p>
+<p>La <em>Salle des Taureaux</em> est le plus grand ensemble de peintures pariétales au monde. Les techniques sont sophistiquées : projection de pigment par soufflage (aérographe préhistorique), utilisation des reliefs de la roche, superposition de figures. La grotte originale est fermée au public depuis 1963 (la respiration des visiteurs dégradait les peintures). Quatre répliques successives ont été créées. Picasso, en sortant de Lascaux, aurait dit : « Nous n'avons rien inventé. »</p>`,
+       highlight:"Picasso sort de Lascaux et dit : « Nous n'avons rien inventé. » L'art a 17 000 ans — et il est déjà parfait.",
+       works:["Salle des Taureaux (~17 000 av. J.-C.)","La Licorne","Le Puits (scène de l'homme et du bison)"]},
+    ],
+    works:[
+      {title:"Grotte Chauvet — Panneau des Lions",artist:"Anonymes, ~36 000 av. J.-C.",wiki:"Chauvet_Cave"},
+      {title:"Grotte de Lascaux — Salle des Taureaux",artist:"Anonymes, ~17 000 av. J.-C.",wiki:"Lascaux"},
+      {title:"Vénus de Willendorf",artist:"Anonyme, ~25 000 av. J.-C.",wiki:"Venus_of_Willendorf"},
+      {title:"Stonehenge",artist:"Anonymes, ~3000–2000 av. J.-C.",wiki:"Stonehenge"},
+      {title:"Grotte d'Altamira",artist:"Anonymes, ~15 000 av. J.-C.",wiki:"Cave_of_Altamira"},
+    ]
+  },
+  {
     id:"antiquite",era:"Antiquité",name:"Art de l'Antiquité",dates:"~3500 av. J.-C. — ~500 ap. J.-C.",
     intro:"L'art antique pose les fondements de toute la culture visuelle occidentale : idéalisation du corps humain, harmonie des proportions, et art au service du religieux et du politique.",
     detail:`<p>L'art de l'Antiquité s'étend sur près de quatre millénaires. L'<strong>Égypte ancienne</strong> développe un art entièrement au service du culte funéraire : la loi du <strong>frontalisme</strong> impose que chaque partie du corps soit représentée sous son angle le plus reconnaissable. La <strong>hiérarchie des tailles</strong> fait du pharaon le plus grand personnage de la composition.</p><p>La <strong>Grèce classique</strong> (~700–323 av. J.-C.) opère une révolution : l'idéal de beauté humaine devient le sujet central. Les sculpteurs mettent au point le <strong>canon des proportions</strong> (Polyclète : la tête = 1/7e du corps), inventent le <strong>contrapposto</strong> et cherchent à imiter la nature tout en l'idéalisant — la <em>mimèsis</em>. L'art <strong>hellénistique</strong> intensifie le pathos et le mouvement (Victoire de Samothrace, Laocoon).</p><p>L'<strong>art romain</strong> ajoute un sens pratique et politique : portrait réaliste (y compris les défauts), sculpture narrative en relief (Colonne Trajane), architecture civile monumentale et peinture décorative illusionniste (Pompéi).</p>`,
@@ -326,6 +353,38 @@ export const movements: Movement[] = [
       {title:"Las Meninas",artist:"Velázquez, 1656",wiki:"Las_Meninas"},
       {title:"La Descente de Croix",artist:"Rubens, 1612–1614",wiki:"Descent_from_the_Cross_(Rubens)"},
       {title:"Le Retour du fils prodigue",artist:"Rembrandt, ~1668",wiki:"The_Return_of_the_Prodigal_Son_(Rembrandt)"},
+    ]
+  },
+  {
+    id:"rococo",era:"XVIIIe siècle",name:"Rococo & Siècle des Lumières",dates:"1700 — 1780",
+    intro:"Le Rococo est l'art du plaisir, de la grâce et de la légèreté — la réaction joyeuse à la solennité du Baroque. Intimité, érotisme voilé, pastels et courbes délicates. Mais derrière la fête, les Lumières préparent la Révolution.",
+    detail:`<p>Le <strong>Rococo</strong> naît en France après la mort de Louis XIV (1715), quand l'aristocratie, libérée du cérémonial versaillais, se retire dans des hôtels particuliers parisiens aux décors intimes. Le terme vient de « rocaille » (ornement de coquillages et pierres) et est d'abord péjoratif. Le style se caractérise par des <strong>courbes asymétriques</strong>, des <strong>couleurs pastel</strong> (rose, bleu pâle, vert d'eau), des sujets galants et érotiques, une atmosphère de fête permanente et de légèreté aristocratique.</p>
+<p>En peinture, <strong>Watteau</strong> invente un genre nouveau : la <em>fête galante</em> — des aristocrates en costumes de soie dans des parcs idéalisés, jouant de la musique, flirtant, dans une atmosphère de mélancolie douce et de plaisir suspendu. <strong>Boucher</strong> pousse l'érotisme mythologique à son comble (nus roses de Vénus et de Diane pour Madame de Pompadour). <strong>Fragonard</strong> peint le désir et le jeu amoureux avec une touche d'une virtuosité éblouissante — <em>Les Hasards heureux de l'escarpolette</em> (1767) est un condensé de l'esprit Rococo.</p>
+<p>Mais le XVIIIe siècle est aussi le <strong>siècle des Lumières</strong>. <strong>Chardin</strong> peint des natures mortes et des scènes domestiques d'une honnêteté silencieuse — l'antithèse du Rococo frivole. En Angleterre, <strong>Hogarth</strong> invente la satire sociale en peinture, et <strong>Gainsborough</strong> et <strong>Reynolds</strong> développent le portrait aristocratique. En Italie, <strong>Canaletto</strong> et <strong>Guardi</strong> peignent les vedute (vues) de Venise pour les touristes du Grand Tour. Le Rococo sera violemment rejeté par les Néoclassiques — David le considère comme l'art d'une aristocratie décadente vouée à disparaître.</p>`,
+    notions:["Fête galante","Rocaille","Courbe asymétrique","Pastel","Érotisme voilé","Siècle des Lumières","Nature morte (Chardin)","Veduta (vue topographique)","Grand Tour","Hôtel particulier","Art de vivre (art de cour)"],
+    artists:[
+      {name:"Antoine Watteau",dates:"1684–1721",movement:"Rococo",wiki:"Antoine_Watteau",
+       bio:`<p>Watteau est le fondateur du Rococo en peinture et l'inventeur d'un genre nouveau : la <em>fête galante</em>. Né à Valenciennes (alors en Flandre), il arrive à Paris jeune et pauvre. Son chef-d'œuvre, <em>Le Pèlerinage à l'île de Cythère</em> (1717), lui vaut l'admission à l'Académie dans une catégorie créée spécialement pour lui. Des couples élégants en costumes de soie se préparent à quitter l'île de Vénus — ou viennent d'y arriver, les interprétations divergent.</p>
+<p>L'atmosphère de Watteau est unique : une <strong>mélancolie douce</strong> imprègne même ses scènes de plaisir, comme si la fête était déjà un souvenir. Sa touche est d'une légèreté aérienne, ses couleurs irisées. Derrière les masques et les costumes de la commedia dell'arte (<em>Pierrot/Gilles</em>, ~1718–1719), on devine une tristesse profonde. Il meurt de tuberculose à 36 ans — ses amis détruisent des centaines de dessins érotiques pour protéger sa réputation.</p>`,
+       highlight:"Chez Watteau, la fête est toujours un adieu. Le plaisir et la mélancolie sont indissociables.",
+       works:["Le Pèlerinage à l'île de Cythère (1717)","Pierrot / Gilles (~1718–1719)","L'Enseigne de Gersaint (1720)"]},
+      {name:"Jean-Honoré Fragonard",dates:"1732–1806",movement:"Rococo",wiki:"Jean-Honoré_Fragonard",
+       bio:`<p>Fragonard est le virtuose du Rococo tardif — un peintre d'une rapidité et d'une liberté de touche éblouissantes. Élève de Chardin puis de Boucher, il développe un style personnel d'une sensualité et d'une énergie incomparables. Ses <em>Hasards heureux de l'escarpolette</em> (1767) — une jeune femme sur une balançoire, envoyant sa mule en l'air vers un galant caché dans les buissons, qui a vue sous ses jupes — est le tableau Rococo par excellence : érotisme, légèreté, virtuosité, jardin luxuriant.</p>
+<p>Ses « figures de fantaisie » (~1769) — une série de portraits peints en une heure chacun, avec une touche d'une liberté quasi impressionniste — sont d'une modernité stupéfiante. Mais la Révolution française balaie le monde qui le nourrissait. Fragonard, protégé par David, survit mais meurt oublié et sans le sou en 1806 — victime du changement de goût le plus brutal de l'histoire de l'art.</p>`,
+       highlight:"Les Hasards heureux de l'escarpolette : tout le Rococo en un tableau — désir, jeu, soie, lumière et sous-entendu.",
+       works:["Les Hasards heureux de l'escarpolette (1767)","Le Verrou (~1777)","Figures de fantaisie (~1769)","La Liseuse (~1770)"]},
+      {name:"Jean-Siméon Chardin",dates:"1699–1779",movement:"Nature morte / Siècle des Lumières",wiki:"Jean-Baptiste-Siméon_Chardin",
+       bio:`<p>Chardin est l'antithèse du Rococo frivole — et pourtant son exact contemporain. Là où Boucher et Fragonard peignent la soie, l'érotisme et la fête, Chardin peint des <strong>natures mortes</strong> (pots en cuivre, fruits, verres d'eau, lapins morts) et des <strong>scènes domestiques</strong> (un enfant soufflant une bulle, une femme épluchant des légumes) d'une honnêteté, d'une gravité et d'une poésie silencieuse sans équivalent.</p>
+<p>Diderot, le philosophe des Lumières, le considère comme le plus grand peintre français de son temps — au-dessus de Boucher : « On n'entend rien à cette magie. Ce ne sont pas des couleurs qu'on applique, c'est une vapeur qu'on souffle sur la toile. » Sa technique est en effet mystérieuse : des couches de peinture superposées créent un effet de matière et de lumière presque tactile. Ses derniers pastels (autoportraits à la visière verte) sont d'une intimité bouleversante. Il est redécouvert par les frères Goncourt au XIXe siècle et admiré par Cézanne, Morandi et Rothko.</p>`,
+       highlight:"Diderot sur Chardin : « On n'entend rien à cette magie. Ce ne sont pas des couleurs, c'est une vapeur sur la toile. »",
+       works:["La Raie (~1728)","Le Bénédicité (1740)","Nature morte aux pêches (~1760)","Autoportrait aux bésicles (1771)"]},
+    ],
+    works:[
+      {title:"Le Pèlerinage à l'île de Cythère",artist:"Watteau, 1717",wiki:"Pilgrimage_to_Cythera"},
+      {title:"Les Hasards heureux de l'escarpolette",artist:"Fragonard, 1767",wiki:"The_Swing_(Fragonard)"},
+      {title:"La Raie",artist:"Chardin, ~1728",wiki:"The_Skate_(Chardin)"},
+      {title:"Pierrot / Gilles",artist:"Watteau, ~1718–1719",wiki:"Pierrot_(Watteau)"},
+      {title:"Le Verrou",artist:"Fragonard, ~1777",wiki:"The_Bolt_(Fragonard)"},
     ]
   },
   {
